@@ -1,11 +1,7 @@
 pipeline {
   agent any
   parameters {
-     credentials credentialType: 'com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl', 
-     defaultValue: '', 
-     description: 'Docker credentials', 
-     name: 'DOCKER_PARAM', 
-     required: true
+  credentials credentialType: 'com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl', defaultValue: '', name: 'DOCKER_PARAM', required: true
   }
   environment{
     DOCKER=credentials("${DOCKER_PARAM}")
