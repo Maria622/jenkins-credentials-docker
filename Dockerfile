@@ -1,6 +1,6 @@
 ##Descargamos una versión concreta de UBUNTU, a través del tag 
 FROM ubuntu 
-LABEL Apasoft Formacion="apasoft.formacion@gmail.com" 
+LABEL Author="Maria622" 
 ##Actualizamos el sistema 
 RUN apt-get update 
 ##Instalamos nginx 
